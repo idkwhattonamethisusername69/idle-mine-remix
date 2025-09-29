@@ -8,7 +8,7 @@ Vue.component("powers-table", {
                 let result = Decimal.max((val.div(1e3)).pow(0.5 - i * 0.1), 1);
                 if(i === 3)
                 {
-                    result = new Decimal(Decimal.log10(result) + 1); //gem bonus shouldnt be exponential
+                    result = new Decimal(Decimal.log10(result) + 9999999); //gem bonus shouldnt be exponential
                 }
                 return result;
             },
